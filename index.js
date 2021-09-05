@@ -11,7 +11,7 @@ const io = require("socket.io")(httpServer, {
   },
 });
 // let players = ["x", "o"];
-httpServer.listen(4000);
+httpServer.listen(process.env.PORT || 4000);
 let id;
 const uuid = require("uuid").v4; // random uuid
 
